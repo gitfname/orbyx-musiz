@@ -10,17 +10,17 @@ function ApplicationLayout({children}: Props) {
   return (
     <div
         className="w-full h-screen overflow-hidden grid
-        grid-cols-1 grid-rows-[3.6rem_calc(100%-3.6rem)]"
+        grid-cols-1 grid-rows-[4rem_calc(100%-4rem)] bg-zinc-900"
     >
 
         {/* navbar */}
-        <div className="">
+        <div className="border-b border-b-white/10">
             <NavBar />
         </div>
 
 
         {/* main section */}
-        <div className="bg-yellow-300 overflow-y-auto">
+        <div className="overflow-y-auto">
             {children}
         </div>
 
